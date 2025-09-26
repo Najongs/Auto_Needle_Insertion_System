@@ -139,7 +139,7 @@ def camera_thread(serial, calib_path, shared_joints, joint_lock, frame_queue):
     ar_t, ar_r = None, None
     for entry in aruco_dict_json:
         if entry['view'] == view and entry['cam'] == 'leftcam':
-            ar_t = np.array([entry['mean_x'], entry['mean_y'], entry['mean_z']], dtype=np.float32)
+            ar_t = np.array([entry['mean_x'], entry['mean_y']-0.01, entry['mean_z']], dtype=np.float32)
             ar_r = np.deg2rad([entry['rvec_x_deg'], entry['rvec_y_deg'], entry['rvec_z_deg']])
             break
 

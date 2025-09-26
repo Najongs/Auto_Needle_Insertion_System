@@ -1,0 +1,22 @@
+{
+    "robot_information": [
+        {
+            "model": "Meca500",
+            "revision": "4",
+            "version": "11.1.6.10762-official",
+            "serial_number": "M500-1664",
+            "time_recorded": "2025-09-26-15-37-10",
+            "monitoring_interval": "0.01"
+        }
+    ],
+    "sent_commands": [
+        "SetConf(1,1,1)",
+        "MovePose(245.330857,71.314158,70.579333,-174.999591,14.169026,161.421036)"
+    ],
+    "test_context": {
+        "testing_function_name": "",
+        "data_origin_files": [],
+        "data_columns_inspected": []
+    },
+    "test_results": {}
+}
